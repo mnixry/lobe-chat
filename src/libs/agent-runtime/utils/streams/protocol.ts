@@ -45,8 +45,21 @@ export const chatStreamable = async function* <T>(stream: AsyncIterable<T>) {
 export const createSSEProtocolTransformer = (
   transformer: (chunk: any, stack: StreamStack) => StreamProtocolChunk,
   streamStack?: StreamStack,
+  heartbeatInterval?: number,
 ) =>
   new TransformStream({
+    start: (controller) => {
+      if (heartbeatInterval) {
+        let intervalId = setInterval(() => {
+          if (controller.desiredSize === 0) {
+            clearInterval(intervalId);
+          }
+          controller.enqueue(`id: ${Date.now()}\n`);
+          controller.enqueue(`event: heartbeat\n`);
+          controller.enqueue('data: {}\n\n');
+        }, heartbeatInterval);
+      }
+    },
     transform: (chunk, controller) => {
       const { type, id, data } = transformer(chunk, streamStack || { id: '' });
 

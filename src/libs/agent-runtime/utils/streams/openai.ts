@@ -121,6 +121,6 @@ export const OpenAIStream = (
     stream instanceof ReadableStream ? stream : readableFromAsyncIterable(chatStreamable(stream));
 
   return readableStream
-    .pipeThrough(createSSEProtocolTransformer(transformOpenAIStream, streamStack))
+    .pipeThrough(createSSEProtocolTransformer(transformOpenAIStream, streamStack, 10_000))
     .pipeThrough(createCallbacksTransformer(callbacks));
 };

@@ -184,7 +184,7 @@
     "chroma-js": "^3.1.2",
     "cookie": "^1.0.2",
     "countries-and-timezones": "^3.8.0",
-    "dayjs": "^1.11.13",
+    "dayjs": "^1.11.18",
     "debug": "^4.4.1",
     "dexie": "^3.2.7",
     "diff": "^8.0.0",

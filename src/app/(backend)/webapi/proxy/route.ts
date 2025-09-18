@@ -1,8 +1,5 @@
+import { ssrfSafeFetch } from '@lobechat/utils/server';
 import { NextResponse } from 'next/server';
-import fetch from 'node-fetch';
-import { RequestFilteringAgentOptions, useAgent as ssrfAgent } from 'request-filtering-agent';
-
-import { appEnv } from '@/envs/app';
 
 /**
  * just for a proxy
@@ -11,14 +8,7 @@ export const POST = async (req: Request) => {
   const url = await req.text();
 
   try {
-    // https://www.npmjs.com/package/request-filtering-agent
-    const options: RequestFilteringAgentOptions = {
-      allowIPAddressList: appEnv.SSRF_ALLOW_IP_ADDRESS_LIST?.split(',') || [],
-      allowMetaIPAddress: appEnv.SSRF_ALLOW_PRIVATE_IP_ADDRESS,
-      allowPrivateIPAddress: appEnv.SSRF_ALLOW_PRIVATE_IP_ADDRESS,
-      denyIPAddressList: [],
-    };
-    const res = await fetch(url, { agent: ssrfAgent(url, options) });
+    const res = await ssrfSafeFetch(url);
 
     return new Response(await res.arrayBuffer(), { headers: { ...res.headers } });
   } catch (err) {

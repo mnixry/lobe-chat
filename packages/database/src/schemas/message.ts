@@ -1,5 +1,5 @@
 /* eslint-disable sort-keys-fix/sort-keys-fix  */
-import { GroundingSearch, ModelReasoning } from '@lobechat/types';
+import { GroundingSearch, ModelReasoning, ToolIntervention } from '@lobechat/types';
 import {
   boolean,
   index,
@@ -150,6 +150,8 @@ export const messagePlugins = pgTable(
       enum: ['default', 'markdown', 'standalone', 'builtin'],
     }).default('default'),
 
+    // Human intervention fields
+    intervention: jsonb('intervention').$type<ToolIntervention>().default({}),
     apiName: text('api_name'),
     arguments: text('arguments'),
     identifier: text('identifier'),

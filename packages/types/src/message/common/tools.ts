@@ -103,3 +103,8 @@ export interface ChatMessagePluginError {
   message: string;
   type: IPluginErrorType;
 }
+
+export interface ToolIntervention {
+  rejectedReason?: string;
+  status?: 'pending' | 'approved' | 'rejected' | 'none';
+}

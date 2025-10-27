@@ -45,8 +45,22 @@ export class UserMemoryModel {
    * Query all contexts
    */
   queryContexts = async () => {
-    return this.db.query.userMemoriesContexts.findMany({
+    // Get all memory IDs for this user first
+    const userMemoryIds = await this.db
+      .select({ id: userMemories.id })
+      .from(userMemories)
+      .where(eq(userMemories.userId, this.userId));
+
+    const memoryIdSet = new Set(userMemoryIds.map((m) => m.id));
+
+    const allContexts = await this.db.query.userMemoriesContexts.findMany({
       orderBy: [desc(userMemoriesContexts.updatedAt)],
+    });
+
+    // Filter contexts that belong to user's memories
+    return allContexts.filter((context) => {
+      const memoryIds = (context.userMemoryIds as string[]) || [];
+      return memoryIds.some((id) => memoryIdSet.has(id));
     });
   };
 
@@ -54,27 +68,54 @@ export class UserMemoryModel {
    * Query all preferences
    */
   queryPreferences = async () => {
-    return this.db.query.userMemoriesPreferences.findMany({
+    const userMemoryIds = await this.db
+      .select({ id: userMemories.id })
+      .from(userMemories)
+      .where(eq(userMemories.userId, this.userId));
+
+    const memoryIdSet = new Set(userMemoryIds.map((m) => m.id));
+
+    const allPreferences = await this.db.query.userMemoriesPreferences.findMany({
       orderBy: [desc(userMemoriesPreferences.updatedAt)],
     });
+
+    return allPreferences.filter((pref) => pref.userMemoryId && memoryIdSet.has(pref.userMemoryId));
   };
 
   /**
    * Query all identities
    */
   queryIdentities = async () => {
-    return this.db.query.userMemoriesIdentities.findMany({
+    const userMemoryIds = await this.db
+      .select({ id: userMemories.id })
+      .from(userMemories)
+      .where(eq(userMemories.userId, this.userId));
+
+    const memoryIdSet = new Set(userMemoryIds.map((m) => m.id));
+
+    const allIdentities = await this.db.query.userMemoriesIdentities.findMany({
       orderBy: [desc(userMemoriesIdentities.updatedAt)],
     });
+
+    return allIdentities.filter((identity) => identity.userMemoryId && memoryIdSet.has(identity.userMemoryId));
   };
 
   /**
    * Query all experiences
    */
   queryExperiences = async () => {
-    return this.db.query.userMemoriesExperiences.findMany({
+    const userMemoryIds = await this.db
+      .select({ id: userMemories.id })
+      .from(userMemories)
+      .where(eq(userMemories.userId, this.userId));
+
+    const memoryIdSet = new Set(userMemoryIds.map((m) => m.id));
+
+    const allExperiences = await this.db.query.userMemoriesExperiences.findMany({
       orderBy: [desc(userMemoriesExperiences.updatedAt)],
     });
+
+    return allExperiences.filter((exp) => exp.userMemoryId && memoryIdSet.has(exp.userMemoryId));
   };
 
   /**
@@ -92,6 +133,14 @@ export class UserMemoryModel {
    * Create a new identity
    */
   createIdentity = async (data: NewUserMemoryIdentity) => {
+    // Verify the userMemoryId belongs to this user if provided
+    if (data.userMemoryId) {
+      const memory = await this.findById(data.userMemoryId);
+      if (!memory) {
+        throw new Error('Memory not found or access denied');
+      }
+    }
+
     const result = await this.db.insert(userMemoriesIdentities).values(data).returning();
     return result[0];
   };
@@ -100,6 +149,12 @@ export class UserMemoryModel {
    * Update an identity
    */
   updateIdentity = async (id: string, data: Partial<NewUserMemoryIdentity>) => {
+    // First verify the identity belongs to this user
+    const identity = await this.findIdentityById(id);
+    if (!identity) {
+      throw new Error('Identity not found or access denied');
+    }
+
     const result = await this.db
       .update(userMemoriesIdentities)
       .set({ ...data, updatedAt: new Date() })
@@ -112,6 +167,12 @@ export class UserMemoryModel {
    * Delete an identity
    */
   deleteIdentity = async (id: string) => {
+    // First verify the identity belongs to this user
+    const identity = await this.findIdentityById(id);
+    if (!identity) {
+      throw new Error('Identity not found or access denied');
+    }
+
     await this.db.delete(userMemoriesIdentities).where(eq(userMemoriesIdentities.id, id));
   };
 
@@ -119,8 +180,20 @@ export class UserMemoryModel {
    * Find identity by ID
    */
   findIdentityById = async (id: string) => {
-    return this.db.query.userMemoriesIdentities.findFirst({
+    const identity = await this.db.query.userMemoriesIdentities.findFirst({
       where: eq(userMemoriesIdentities.id, id),
     });
+
+    if (!identity || !identity.userMemoryId) {
+      return null;
+    }
+
+    // Verify the identity belongs to this user by checking the parent memory
+    const memory = await this.findById(identity.userMemoryId);
+    if (!memory) {
+      return null;
+    }
+
+    return identity;
   };
 }

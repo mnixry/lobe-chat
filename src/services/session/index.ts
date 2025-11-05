@@ -122,7 +122,7 @@ export class SessionService {
    * 需要废弃
    * @deprecated
    */
-  batchCreateSessionGroups = (groups: SessionGroups): Promise<BatchTaskResult> => {
+  batchCreateSessionGroups = (_groups: SessionGroups): Promise<BatchTaskResult> => {
     return Promise.resolve({ added: 0, ids: [], skips: [], success: true });
   };
 

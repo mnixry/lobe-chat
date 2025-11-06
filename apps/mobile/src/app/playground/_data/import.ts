@@ -23,6 +23,8 @@ import CardDemos from '@lobehub/ui-rn/Card/demos';
 import CellDemos from '@lobehub/ui-rn/Cell/demos';
 // Center
 import CenterDemos from '@lobehub/ui-rn/Center/demos';
+// Checkbox
+import CheckboxDemos from '@lobehub/ui-rn/Checkbox/demos';
 // ColorScales
 import ColorScalesDemos from '@lobehub/ui-rn/ColorScales/demos';
 // ColorSwatches
@@ -115,6 +117,7 @@ export const DEMOS_MAP: Record<string, any> = {
   Card: CardDemos,
   Cell: CellDemos,
   Center: CenterDemos,
+  Checkbox: CheckboxDemos,
   ColorScales: ColorScalesDemos,
   ColorSwatches: ColorSwatchesDemos,
   Divider: DividerDemos,

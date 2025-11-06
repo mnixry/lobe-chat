@@ -7,13 +7,18 @@
     "continue": "Continue",
     "copy": "Copy",
     "delete": "Delete",
+    "done": "Done",
     "edit": "Edit",
     "more": "More",
     "notNow": "Not Now",
+    "openSettings": "Open Settings",
     "regenerate": "Regenerate",
     "retry": "Retry",
     "save": "Save",
-    "saveImage": "Save Image"
+    "saveImage": "Save Image",
+    "saveToAlbum": "Save to Album",
+    "share": "Share",
+    "shareImage": "Share Image"
   },
   "and": "and",
   "assistant": {
@@ -40,6 +45,7 @@
     "placeholder": "Search"
   },
   "status": {
+    "capturing": "Capturing...",
     "error": "Error",
     "info": "Info",
     "loading": "Loading...",

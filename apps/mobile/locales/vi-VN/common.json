@@ -7,13 +7,18 @@
     "continue": "Tiếp tục",
     "copy": "Sao chép",
     "delete": "Xóa",
+    "done": "Hoàn tất",
     "edit": "Chỉnh sửa",
     "more": "Thêm",
     "notNow": "Không phải bây giờ",
+    "openSettings": "Mở cài đặt",
     "regenerate": "Tạo lại",
     "retry": "Thử lại",
     "save": "Lưu",
-    "saveImage": "Lưu hình ảnh"
+    "saveImage": "Lưu hình ảnh",
+    "saveToAlbum": "Lưu vào album",
+    "share": "Chia sẻ",
+    "shareImage": "Chia sẻ hình ảnh"
   },
   "and": "và",
   "assistant": {
@@ -40,6 +45,7 @@
     "placeholder": "Tìm kiếm"
   },
   "status": {
+    "capturing": "Đang chụp màn hình...",
     "error": "Lỗi",
     "info": "Thông tin",
     "loading": "Đang tải...",

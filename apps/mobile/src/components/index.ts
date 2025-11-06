@@ -22,6 +22,7 @@ export {
 export { default as Card, type CardProps } from './Card';
 export { default as Cell, type CellProps } from './Cell';
 export { default as Center, type CenterProps } from './Center';
+export { default as Checkbox, type CheckboxProps } from './Checkbox';
 export { default as ColorScales, type ColorScalesProps } from './ColorScales';
 export {
   default as ColorSwatches,

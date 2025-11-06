@@ -18,6 +18,7 @@
   "defaultAgent": "自訂助手",
   "defaultList": "預設清單",
   "deleteMessageConfirm": "確定要刪除這則訊息嗎？",
+  "generateShareImage": "產生分享圖",
   "history": "對話歷史",
   "inbox": {
     "desc": "開啟大腦集群，激發思維火花。你的智慧助理，在這裡與你交流一切",
@@ -39,6 +40,7 @@
     "thoughtWithoutDuration": "已深入思考"
   },
   "regenerateFailed": "重新生成失敗，請稍後重試",
+  "selectedMessages": "已選取 {{count}} 則訊息",
   "send": "發送",
   "session": {
     "createFirst": "建立您的第一個聊天會話",
@@ -76,6 +78,17 @@
     "title": "會話設定"
   },
   "share": "分享",
+  "shareDisclaimer": "本回答由 AI 生成，僅供參考，請審慎辨識",
+  "shareImageCaptureFailed": "截圖失敗，請重試",
+  "shareImageFailed": "分享失敗，請重試",
+  "shareImageGenerated": "分享圖已產生",
+  "shareImageGeneratedDesc": "請選擇要執行的操作",
+  "shareImageSaveFailed": "儲存失敗，請重試",
+  "shareImageSaveSuccess": "圖片已儲存至相簿",
+  "shareImageTitle": "分享聊天記錄",
+  "shareMessages": "分享 {{count}} 則訊息",
+  "shareNotAvailable": "您的裝置不支援分享功能",
+  "shareWatermark": "由 {{app}} 產生",
   "stop": "停止",
   "thinking": "思考中...",
   "upload": {

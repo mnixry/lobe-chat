@@ -7,13 +7,18 @@
     "continue": "Doorgaan",
     "copy": "Kopiëren",
     "delete": "Verwijderen",
+    "done": "Voltooid",
     "edit": "Bewerken",
     "more": "Meer",
     "notNow": "Niet nu",
+    "openSettings": "Instellingen openen",
     "regenerate": "Opnieuw genereren",
     "retry": "Opnieuw proberen",
     "save": "Opslaan",
-    "saveImage": "Afbeelding opslaan"
+    "saveImage": "Afbeelding opslaan",
+    "saveToAlbum": "Opslaan in album",
+    "share": "Delen",
+    "shareImage": "Afbeelding delen"
   },
   "and": "en",
   "assistant": {
@@ -40,6 +45,7 @@
     "placeholder": "Zoeken"
   },
   "status": {
+    "capturing": "Bezig met vastleggen...",
     "error": "Fout",
     "info": "Informatie",
     "loading": "Bezig met laden...",

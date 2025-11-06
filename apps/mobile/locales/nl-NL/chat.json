@@ -18,6 +18,7 @@
   "defaultAgent": "Aangepaste assistent",
   "defaultList": "Standaardlijst",
   "deleteMessageConfirm": "Weet je zeker dat je dit bericht wilt verwijderen?",
+  "generateShareImage": "Deelafbeelding genereren",
   "history": "Gespreksgeschiedenis",
   "inbox": {
     "desc": "Activeer de breincluster en stimuleer creatieve ideeën. Je slimme assistent is hier om alles met je te bespreken.",
@@ -39,6 +40,7 @@
     "thoughtWithoutDuration": "Diep nagedacht"
   },
   "regenerateFailed": "Hertellen mislukt, probeer het later opnieuw",
+  "selectedMessages": "{{count}} berichten geselecteerd",
   "send": "Verzenden",
   "session": {
     "createFirst": "Maak je eerste chatsessie aan",
@@ -76,6 +78,17 @@
     "title": "Gespreksinstellingen"
   },
   "share": "Delen",
+  "shareDisclaimer": "Dit antwoord is gegenereerd door AI en dient alleen ter referentie. Gebruik je eigen oordeel bij de beoordeling.",
+  "shareImageCaptureFailed": "Schermafbeelding mislukt, probeer het opnieuw",
+  "shareImageFailed": "Delen mislukt, probeer het opnieuw",
+  "shareImageGenerated": "Deelafbeelding gegenereerd",
+  "shareImageGeneratedDesc": "Kies de gewenste actie",
+  "shareImageSaveFailed": "Opslaan mislukt, probeer het opnieuw",
+  "shareImageSaveSuccess": "Afbeelding opgeslagen in album",
+  "shareImageTitle": "Chatgeschiedenis delen",
+  "shareMessages": "{{count}} berichten delen",
+  "shareNotAvailable": "Uw apparaat ondersteunt de deelfunctie niet",
+  "shareWatermark": "Gegenereerd door {{app}}",
   "stop": "Stoppen",
   "thinking": "Bezig met nadenken...",
   "upload": {

@@ -18,6 +18,7 @@
   "defaultAgent": "Assistente Personalizado",
   "defaultList": "Lista padrão",
   "deleteMessageConfirm": "Tem certeza de que deseja excluir esta mensagem?",
+  "generateShareImage": "Gerar imagem de compartilhamento",
   "history": "Histórico de Conversas",
   "inbox": {
     "desc": "Ative o cluster cerebral para estimular faíscas de pensamento. Seu assistente inteligente está aqui para conversar sobre tudo com você.",
@@ -39,6 +40,7 @@
     "thoughtWithoutDuration": "Reflexão concluída"
   },
   "regenerateFailed": "Falha ao regenerar, por favor tente novamente mais tarde",
+  "selectedMessages": "{{count}} mensagens selecionadas",
   "send": "Enviar",
   "session": {
     "createFirst": "Crie sua primeira sessão de chat",
@@ -76,6 +78,17 @@
     "title": "Configurações da Conversa"
   },
   "share": "Compartilhar",
+  "shareDisclaimer": "Esta resposta foi gerada por IA e é apenas para referência. Por favor, analise com cuidado.",
+  "shareImageCaptureFailed": "Falha ao capturar a imagem, tente novamente",
+  "shareImageFailed": "Falha ao compartilhar, tente novamente",
+  "shareImageGenerated": "Imagem de compartilhamento gerada",
+  "shareImageGeneratedDesc": "Escolha a ação que deseja realizar",
+  "shareImageSaveFailed": "Falha ao salvar, tente novamente",
+  "shareImageSaveSuccess": "Imagem salva no álbum",
+  "shareImageTitle": "Compartilhar histórico de conversa",
+  "shareMessages": "Compartilhar {{count}} mensagens",
+  "shareNotAvailable": "Seu dispositivo não suporta a função de compartilhamento",
+  "shareWatermark": "Gerado por {{app}}",
   "stop": "Parar",
   "thinking": "Pensando...",
   "upload": {

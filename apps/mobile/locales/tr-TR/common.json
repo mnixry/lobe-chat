@@ -7,13 +7,18 @@
     "continue": "Devam Et",
     "copy": "Kopyala",
     "delete": "Sil",
+    "done": "Tamamlandı",
     "edit": "Düzenle",
     "more": "Daha fazla",
     "notNow": "Şimdi değil",
+    "openSettings": "Ayarları Aç",
     "regenerate": "Yeniden Oluştur",
     "retry": "Tekrar Dene",
     "save": "Kaydet",
-    "saveImage": "Resmi Kaydet"
+    "saveImage": "Resmi Kaydet",
+    "saveToAlbum": "Albümde Kaydet",
+    "share": "Paylaş",
+    "shareImage": "Resmi Paylaş"
   },
   "and": "ve",
   "assistant": {
@@ -40,6 +45,7 @@
     "placeholder": "Ara"
   },
   "status": {
+    "capturing": "Ekran görüntüsü alınıyor...",
     "error": "Hata",
     "info": "Bilgi",
     "loading": "Yükleniyor...",

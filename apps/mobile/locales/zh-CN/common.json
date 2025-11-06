@@ -7,13 +7,18 @@
     "continue": "继续",
     "copy": "复制",
     "delete": "删除",
+    "done": "完成",
     "edit": "编辑",
     "more": "更多",
     "notNow": "暂不",
+    "openSettings": "打开设置",
     "regenerate": "重新生成",
     "retry": "重试",
     "save": "保存",
-    "saveImage": "保存图片"
+    "saveImage": "保存图片",
+    "saveToAlbum": "保存到相册",
+    "share": "分享",
+    "shareImage": "分享图片"
   },
   "and": "和",
   "assistant": {
@@ -40,6 +45,7 @@
     "placeholder": "搜索"
   },
   "status": {
+    "capturing": "截图中...",
     "error": "错误",
     "info": "信息",
     "loading": "加载中...",

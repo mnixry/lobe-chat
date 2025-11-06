@@ -18,6 +18,7 @@
   "defaultAgent": "مساعد مخصص",
   "defaultList": "القائمة الافتراضية",
   "deleteMessageConfirm": "هل أنت متأكد من حذف هذه الرسالة؟",
+  "generateShareImage": "إنشاء صورة للمشاركة",
   "history": "سجل المحادثات",
   "inbox": {
     "desc": "فعّل مجموعة العقول لتحفيز شرارات الأفكار. مساعدك الذكي هنا للتواصل معك في كل شيء.",
@@ -39,6 +40,7 @@
     "thoughtWithoutDuration": "تم التفكير بعمق"
   },
   "regenerateFailed": "فشل في إعادة التوليد، يرجى المحاولة لاحقًا",
+  "selectedMessages": "تم تحديد {{count}} رسالة",
   "send": "إرسال",
   "session": {
     "createFirst": "أنشئ أول جلسة دردشة لك",
@@ -76,6 +78,17 @@
     "title": "إعدادات المحادثة"
   },
   "share": "مشاركة",
+  "shareDisclaimer": "تم إنشاء هذا الرد بواسطة الذكاء الاصطناعي وهو لأغراض مرجعية فقط، يُرجى التحقق منه بعناية",
+  "shareImageCaptureFailed": "فشل في التقاط الصورة، يرجى المحاولة مرة أخرى",
+  "shareImageFailed": "فشل في المشاركة، يرجى المحاولة مرة أخرى",
+  "shareImageGenerated": "تم إنشاء صورة المشاركة",
+  "shareImageGeneratedDesc": "اختر الإجراء الذي تريد تنفيذه",
+  "shareImageSaveFailed": "فشل في الحفظ، يرجى المحاولة مرة أخرى",
+  "shareImageSaveSuccess": "تم حفظ الصورة في الألبوم",
+  "shareImageTitle": "مشاركة سجل الدردشة",
+  "shareMessages": "مشاركة {{count}} رسالة",
+  "shareNotAvailable": "جهازك لا يدعم ميزة المشاركة",
+  "shareWatermark": "تم الإنشاء بواسطة {{app}}",
   "stop": "إيقاف",
   "thinking": "جارٍ التفكير...",
   "upload": {

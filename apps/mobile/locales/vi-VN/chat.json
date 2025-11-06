@@ -18,6 +18,7 @@
   "defaultAgent": "Trợ lý tùy chỉnh",
   "defaultList": "Danh sách mặc định",
   "deleteMessageConfirm": "Bạn có chắc chắn muốn xóa tin nhắn này không?",
+  "generateShareImage": "Tạo hình ảnh chia sẻ",
   "history": "Lịch sử trò chuyện",
   "inbox": {
     "desc": "Kích hoạt cụm não bộ, khơi nguồn ý tưởng. Trợ lý thông minh của bạn, luôn sẵn sàng trò chuyện mọi điều.",
@@ -39,6 +40,7 @@
     "thoughtWithoutDuration": "Đã suy nghĩ sâu"
   },
   "regenerateFailed": "Tạo lại thất bại, vui lòng thử lại sau",
+  "selectedMessages": "Đã chọn {{count}} tin nhắn",
   "send": "Gửi",
   "session": {
     "createFirst": "Tạo cuộc trò chuyện đầu tiên của bạn",
@@ -76,6 +78,17 @@
     "title": "Cài đặt cuộc trò chuyện"
   },
   "share": "Chia sẻ",
+  "shareDisclaimer": "Câu trả lời này được tạo bởi AI, chỉ mang tính chất tham khảo, vui lòng cân nhắc kỹ lưỡng",
+  "shareImageCaptureFailed": "Chụp ảnh màn hình thất bại, vui lòng thử lại",
+  "shareImageFailed": "Chia sẻ thất bại, vui lòng thử lại",
+  "shareImageGenerated": "Hình ảnh chia sẻ đã được tạo",
+  "shareImageGeneratedDesc": "Chọn hành động bạn muốn thực hiện",
+  "shareImageSaveFailed": "Lưu ảnh thất bại, vui lòng thử lại",
+  "shareImageSaveSuccess": "Hình ảnh đã được lưu vào album",
+  "shareImageTitle": "Chia sẻ lịch sử trò chuyện",
+  "shareMessages": "Chia sẻ {{count}} tin nhắn",
+  "shareNotAvailable": "Thiết bị của bạn không hỗ trợ chức năng chia sẻ",
+  "shareWatermark": "Được tạo bởi {{app}}",
   "stop": "Dừng",
   "thinking": "Đang suy nghĩ...",
   "upload": {

@@ -7,13 +7,18 @@
     "continue": "ادامه",
     "copy": "کپی",
     "delete": "حذف",
+    "done": "انجام شد",
     "edit": "ویرایش",
     "more": "بیشتر",
     "notNow": "فعلاً نه",
+    "openSettings": "باز کردن تنظیمات",
     "regenerate": "تولید مجدد",
     "retry": "تلاش مجدد",
     "save": "ذخیره",
-    "saveImage": "ذخیره تصویر"
+    "saveImage": "ذخیره تصویر",
+    "saveToAlbum": "ذخیره در آلبوم",
+    "share": "اشتراک‌گذاری",
+    "shareImage": "اشتراک‌گذاری تصویر"
   },
   "and": "و",
   "assistant": {
@@ -40,6 +45,7 @@
     "placeholder": "جستجو"
   },
   "status": {
+    "capturing": "در حال گرفتن اسکرین‌شات...",
     "error": "خطا",
     "info": "اطلاعات",
     "loading": "در حال بارگذاری...",

@@ -18,6 +18,7 @@
   "defaultAgent": "Niestandardowy asystent",
   "defaultList": "Domyślna lista",
   "deleteMessageConfirm": "Czy na pewno chcesz usunąć tę wiadomość?",
+  "generateShareImage": "Generuj obraz do udostępnienia",
   "history": "Historia rozmów",
   "inbox": {
     "desc": "Włącz klaster mózgów, aby pobudzić iskrę myśli. Twój inteligentny asystent, tutaj, aby rozmawiać o wszystkim",
@@ -39,6 +40,7 @@
     "thoughtWithoutDuration": "Zakończono głębokie myślenie"
   },
   "regenerateFailed": "Nie udało się wygenerować ponownie, spróbuj później",
+  "selectedMessages": "Wybrano {{count}} wiadomości",
   "send": "Wyślij",
   "session": {
     "createFirst": "Utwórz swoją pierwszą sesję czatu",
@@ -76,6 +78,17 @@
     "title": "Ustawienia rozmowy"
   },
   "share": "Udostępnij",
+  "shareDisclaimer": "Ta odpowiedź została wygenerowana przez AI i służy wyłącznie jako materiał poglądowy. Prosimy o dokładną weryfikację.",
+  "shareImageCaptureFailed": "Nie udało się wykonać zrzutu ekranu, spróbuj ponownie",
+  "shareImageFailed": "Udostępnianie nie powiodło się, spróbuj ponownie",
+  "shareImageGenerated": "Obraz do udostępnienia został wygenerowany",
+  "shareImageGeneratedDesc": "Wybierz działanie, które chcesz wykonać",
+  "shareImageSaveFailed": "Nie udało się zapisać, spróbuj ponownie",
+  "shareImageSaveSuccess": "Obraz został zapisany w albumie",
+  "shareImageTitle": "Udostępnij historię czatu",
+  "shareMessages": "Udostępnij {{count}} wiadomości",
+  "shareNotAvailable": "Twoje urządzenie nie obsługuje funkcji udostępniania",
+  "shareWatermark": "Wygenerowano przez {{app}}",
   "stop": "Zatrzymaj",
   "thinking": "Myślę...",
   "upload": {

@@ -7,13 +7,18 @@
     "continue": "Fortsetzen",
     "copy": "Kopieren",
     "delete": "Löschen",
+    "done": "Fertig",
     "edit": "Bearbeiten",
     "more": "Mehr",
     "notNow": "Nicht jetzt",
+    "openSettings": "Einstellungen öffnen",
     "regenerate": "Erneut generieren",
     "retry": "Erneut versuchen",
     "save": "Speichern",
-    "saveImage": "Bild speichern"
+    "saveImage": "Bild speichern",
+    "saveToAlbum": "Im Album speichern",
+    "share": "Teilen",
+    "shareImage": "Bild teilen"
   },
   "and": "und",
   "assistant": {
@@ -40,6 +45,7 @@
     "placeholder": "Suchen"
   },
   "status": {
+    "capturing": "Screenshot wird erstellt...",
     "error": "Fehler",
     "info": "Information",
     "loading": "Wird geladen...",

@@ -20,13 +20,16 @@ const FileContent = memo<FileContentProps>(({ fileType, name, previewUrl, url, s
   // Image files - show actual preview
   if (fileType?.startsWith('image') && displayUrl) {
     return (
-      <Block height={size} variant={'outlined'} width={size}>
+      <Block align={'center'} height={size} justify={'center'} variant={'outlined'} width={size}>
         <Image
           autoSize={false}
           contentFit="cover"
           height={size}
           preview={false}
           source={displayUrl}
+          style={{
+            borderRadius: 0,
+          }}
           width={size}
         />
       </Block>
@@ -36,15 +39,24 @@ const FileContent = memo<FileContentProps>(({ fileType, name, previewUrl, url, s
   // Video files - show video preview
   if (fileType?.startsWith('video') && displayUrl) {
     return (
-      <Block height={size} variant={'outlined'} width={size}>
-        <Video contentFit="cover" height={size} muted src={displayUrl} width={size} />
+      <Block align={'center'} height={size} justify={'center'} variant={'outlined'} width={size}>
+        <Video
+          contentFit="cover"
+          height={size}
+          muted
+          src={displayUrl}
+          style={{
+            borderRadius: 0,
+          }}
+          width={size}
+        />
       </Block>
     );
   }
 
   // Other files - show file icon
   return (
-    <Block height={size} variant={'outlined'} width={size}>
+    <Block align={'center'} height={size} justify={'center'} variant={'outlined'} width={size}>
       <MaterialFileTypeIcon filename={name || ''} size={size * 0.75} type={'file'} />
     </Block>
   );

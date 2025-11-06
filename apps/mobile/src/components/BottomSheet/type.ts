@@ -31,6 +31,13 @@ export interface BottomSheetProps {
   contentContainerStyle?: ViewStyle;
 
   /**
+   * 禁用内部的 ScrollView，使用自定义布局
+   * 当需要完全控制内容布局时使用（如固定底部按钮）
+   * @default false
+   */
+  disableScrollView?: boolean;
+
+  /**
    * 是否启用背景遮罩
    * @default true
    */

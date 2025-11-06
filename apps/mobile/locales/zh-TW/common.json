@@ -7,13 +7,18 @@
     "continue": "繼續",
     "copy": "複製",
     "delete": "刪除",
+    "done": "完成",
     "edit": "編輯",
     "more": "更多",
     "notNow": "暫不",
+    "openSettings": "打開設定",
     "regenerate": "重新生成",
     "retry": "重試",
     "save": "保存",
-    "saveImage": "儲存圖片"
+    "saveImage": "儲存圖片",
+    "saveToAlbum": "儲存到相簿",
+    "share": "分享",
+    "shareImage": "分享圖片"
   },
   "and": "和",
   "assistant": {
@@ -40,6 +45,7 @@
     "placeholder": "搜尋"
   },
   "status": {
+    "capturing": "擷取畫面中...",
     "error": "錯誤",
     "info": "資訊",
     "loading": "載入中...",

@@ -23,6 +23,7 @@ const BottomSheet = memo(
         initialSnapIndex,
         enablePanDownToClose = true,
         enableBackdrop = true,
+        disableScrollView = false,
         backdropComponent,
         containerStyle,
         contentContainerStyle,
@@ -142,15 +143,21 @@ const BottomSheet = memo(
             </Flexbox>
           )}
           {/* Content */}
-          <BottomSheetScrollView
-            contentContainerStyle={contentContainerStyle}
-            showsHorizontalScrollIndicator={false}
-            showsVerticalScrollIndicator={false}
-          >
-            <SafeAreaView edges={['bottom']} testID="bottom-sheet-container">
+          {disableScrollView ? (
+            <SafeAreaView edges={['bottom']} style={{ flex: 1 }} testID="bottom-sheet-container">
               {children}
             </SafeAreaView>
-          </BottomSheetScrollView>
+          ) : (
+            <BottomSheetScrollView
+              contentContainerStyle={contentContainerStyle}
+              showsHorizontalScrollIndicator={false}
+              showsVerticalScrollIndicator={false}
+            >
+              <SafeAreaView edges={['bottom']} testID="bottom-sheet-container">
+                {children}
+              </SafeAreaView>
+            </BottomSheetScrollView>
+          )}
         </BottomSheetModal>
       );
     },

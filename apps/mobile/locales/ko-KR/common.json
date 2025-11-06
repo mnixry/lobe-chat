@@ -7,13 +7,18 @@
     "continue": "계속",
     "copy": "복사",
     "delete": "삭제",
+    "done": "완료",
     "edit": "편집",
     "more": "더보기",
     "notNow": "나중에",
+    "openSettings": "설정 열기",
     "regenerate": "다시 생성",
     "retry": "재시도",
     "save": "저장",
-    "saveImage": "이미지 저장"
+    "saveImage": "이미지 저장",
+    "saveToAlbum": "앨범에 저장",
+    "share": "공유",
+    "shareImage": "이미지 공유"
   },
   "and": "그리고",
   "assistant": {
@@ -40,6 +45,7 @@
     "placeholder": "검색"
   },
   "status": {
+    "capturing": "스크린샷 캡처 중...",
     "error": "오류",
     "info": "정보",
     "loading": "로딩 중...",

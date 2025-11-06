@@ -18,6 +18,7 @@
   "defaultAgent": "Assistant personnalisé",
   "defaultList": "Liste par défaut",
   "deleteMessageConfirm": "Voulez-vous vraiment supprimer ce message ?",
+  "generateShareImage": "Générer une image à partager",
   "history": "Historique des conversations",
   "inbox": {
     "desc": "Activez le cluster cérébral pour stimuler les idées. Votre assistant intelligent est ici pour tout discuter avec vous.",
@@ -39,6 +40,7 @@
     "thoughtWithoutDuration": "Réflexion approfondie terminée"
   },
   "regenerateFailed": "Échec de la régénération, veuillez réessayer plus tard",
+  "selectedMessages": "{{count}} message(s) sélectionnée(s)",
   "send": "Envoyer",
   "session": {
     "createFirst": "Créez votre première session de chat",
@@ -76,6 +78,17 @@
     "title": "Paramètres de la conversation"
   },
   "share": "Partager",
+  "shareDisclaimer": "Cette réponse est générée par une IA et est fournie à titre indicatif uniquement. Veuillez faire preuve de discernement.",
+  "shareImageCaptureFailed": "Échec de la capture d'écran, veuillez réessayer",
+  "shareImageFailed": "Échec du partage, veuillez réessayer",
+  "shareImageGenerated": "Image de partage générée",
+  "shareImageGeneratedDesc": "Choisissez l'action à effectuer",
+  "shareImageSaveFailed": "Échec de l'enregistrement, veuillez réessayer",
+  "shareImageSaveSuccess": "L'image a été enregistrée dans l'album",
+  "shareImageTitle": "Partager l'historique de la conversation",
+  "shareMessages": "Partager {{count}} message(s)",
+  "shareNotAvailable": "La fonction de partage n'est pas prise en charge sur votre appareil",
+  "shareWatermark": "Généré par {{app}}",
   "stop": "Arrêter",
   "thinking": "Réflexion en cours...",
   "upload": {

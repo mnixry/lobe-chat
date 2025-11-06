@@ -18,6 +18,7 @@
   "defaultAgent": "Özel Asistan",
   "defaultList": "Varsayılan Liste",
   "deleteMessageConfirm": "Bu mesajı silmek istediğinizden emin misiniz?",
+  "generateShareImage": "Paylaşım Görseli Oluştur",
   "history": "Sohbet Geçmişi",
   "inbox": {
     "desc": "Beyin kümesini açın, düşünce kıvılcımlarını ateşleyin. Akıllı asistanınız burada sizinle her şeyi konuşmak için.",
@@ -39,6 +40,7 @@
     "thoughtWithoutDuration": "Derinlemesine düşünüldü"
   },
   "regenerateFailed": "Yeniden oluşturma başarısız oldu, lütfen daha sonra tekrar deneyin",
+  "selectedMessages": "{{count}} mesaj seçildi",
   "send": "Gönder",
   "session": {
     "createFirst": "İlk sohbet oturumunuzu oluşturun",
@@ -76,6 +78,17 @@
     "title": "Oturum Ayarları"
   },
   "share": "Paylaş",
+  "shareDisclaimer": "Bu yanıt yapay zeka tarafından oluşturulmuştur, yalnızca referans amaçlıdır, lütfen dikkatlice değerlendiriniz.",
+  "shareImageCaptureFailed": "Ekran görüntüsü alınamadı, lütfen tekrar deneyin",
+  "shareImageFailed": "Paylaşım başarısız oldu, lütfen tekrar deneyin",
+  "shareImageGenerated": "Paylaşım Görseli Oluşturuldu",
+  "shareImageGeneratedDesc": "Yapmak istediğiniz işlemi seçin",
+  "shareImageSaveFailed": "Kaydetme başarısız oldu, lütfen tekrar deneyin",
+  "shareImageSaveSuccess": "Görsel albüme kaydedildi",
+  "shareImageTitle": "Sohbet geçmişini paylaş",
+  "shareMessages": "{{count}} mesajı paylaş",
+  "shareNotAvailable": "Cihazınız paylaşım özelliğini desteklemiyor",
+  "shareWatermark": "{{app}} tarafından oluşturuldu",
   "stop": "Durdur",
   "thinking": "Düşünüyor...",
   "upload": {

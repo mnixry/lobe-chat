@@ -7,13 +7,18 @@
     "continue": "続行",
     "copy": "コピー",
     "delete": "削除",
+    "done": "完了",
     "edit": "編集",
     "more": "さらに表示",
     "notNow": "今はしない",
+    "openSettings": "設定を開く",
     "regenerate": "再生成",
     "retry": "再試行",
     "save": "保存",
-    "saveImage": "画像を保存"
+    "saveImage": "画像を保存",
+    "saveToAlbum": "アルバムに保存",
+    "share": "共有",
+    "shareImage": "画像を共有"
   },
   "and": "と",
   "assistant": {
@@ -40,6 +45,7 @@
     "placeholder": "検索"
   },
   "status": {
+    "capturing": "スクリーンショットを撮影中...",
     "error": "エラー",
     "info": "情報",
     "loading": "読み込み中...",

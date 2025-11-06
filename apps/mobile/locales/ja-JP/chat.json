@@ -18,6 +18,7 @@
   "defaultAgent": "カスタムアシスタント",
   "defaultList": "デフォルトリスト",
   "deleteMessageConfirm": "このメッセージを削除してもよろしいですか？",
+  "generateShareImage": "共有画像を生成",
   "history": "会話履歴",
   "inbox": {
     "desc": "ブレインクラスタを起動し、思考の火花を刺激します。あなたのスマートアシスタントがここであらゆることを話し合います。",
@@ -39,6 +40,7 @@
     "thoughtWithoutDuration": "深く思考しました"
   },
   "regenerateFailed": "再生成に失敗しました。後でもう一度お試しください。",
+  "selectedMessages": "{{count}} 件のメッセージを選択しました",
   "send": "送信",
   "session": {
     "createFirst": "最初のチャットセッションを作成してください",
@@ -76,6 +78,17 @@
     "title": "会話設定"
   },
   "share": "共有",
+  "shareDisclaimer": "この回答はAIによって生成されたものであり、参考情報としてご利用ください。内容の真偽についてはご自身でご確認ください。",
+  "shareImageCaptureFailed": "スクリーンショットの取得に失敗しました。もう一度お試しください。",
+  "shareImageFailed": "共有に失敗しました。もう一度お試しください。",
+  "shareImageGenerated": "共有画像が生成されました",
+  "shareImageGeneratedDesc": "実行する操作を選択してください",
+  "shareImageSaveFailed": "保存に失敗しました。もう一度お試しください。",
+  "shareImageSaveSuccess": "画像がアルバムに保存されました",
+  "shareImageTitle": "チャット履歴を共有",
+  "shareMessages": "{{count}} 件のメッセージを共有",
+  "shareNotAvailable": "お使いのデバイスは共有機能に対応していません",
+  "shareWatermark": "{{app}} によって生成されました",
   "stop": "停止",
   "thinking": "考え中...",
   "upload": {

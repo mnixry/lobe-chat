@@ -2,13 +2,14 @@ import { UIChatMessage } from '@lobechat/types';
 import { Block, BlockProps, BottomSheet, Cell, Divider, Flexbox, useToast } from '@lobehub/ui-rn';
 import * as Clipboard from 'expo-clipboard';
 import { router } from 'expo-router';
-import { Copy, Edit3, RefreshCw, Trash2 } from 'lucide-react-native';
+import { Copy, Edit3, RefreshCw, Share2, Trash2 } from 'lucide-react-native';
 import type { FC, ReactNode } from 'react';
 import { useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Alert, View } from 'react-native';
 
 import { useChatStore } from '@/store/chat';
+import { useGlobalStore } from '@/store/global';
 import { useSessionStore } from '@/store/session';
 import { hapticsEffect } from '@/utils/hapticsEffect';
 
@@ -23,6 +24,7 @@ const MessageContextMenu: FC<MessageContextMenuProps> = ({ message, children, ..
   const { t } = useTranslation(['chat', 'common']);
   const { activeId } = useSessionStore();
   const { deleteMessage, regenerateMessage } = useChatStore();
+  const { setMessageSelectionMode, toggleMessageSelection } = useGlobalStore();
   const toast = useToast();
   const { styles, theme } = useStyles();
   const [open, setOpen] = useState(false);
@@ -92,6 +94,14 @@ const MessageContextMenu: FC<MessageContextMenuProps> = ({ message, children, ..
     }, 300);
   };
 
+  // 分享消息
+  const handleShare = () => {
+    setOpen(false);
+    // 进入选择模式，并选中当前消息
+    setMessageSelectionMode(true);
+    toggleMessageSelection(message.id);
+  };
+
   const clearLongPressTimer = () => {
     if (longPressTimerRef.current) {
       clearTimeout(longPressTimerRef.current);
@@ -138,10 +148,10 @@ const MessageContextMenu: FC<MessageContextMenuProps> = ({ message, children, ..
         onClose={() => setOpen(false)}
         open={open}
         showCloseButton={false}
-        snapPoints={['40%']}
+        snapPoints={['50%', '90%']}
       >
         <Flexbox gap={12} padding={16}>
-          {/* 复制、编辑、重新生成 */}
+          {/* 复制、编辑、分享、重新生成 */}
           <Block variant={'filled'}>
             <Cell
               icon={Copy}
@@ -172,6 +182,17 @@ const MessageContextMenu: FC<MessageContextMenuProps> = ({ message, children, ..
                   ? t('actions.regenerate', { ns: 'common' })
                   : t('actions.retry', { ns: 'common' })
               }
+            />
+          </Block>
+
+          <Block variant={'filled'}>
+            <Cell
+              icon={Share2}
+              iconSize={20}
+              onPress={handleShare}
+              paddingBlock={20}
+              showArrow={false}
+              title={t('actions.share', { ns: 'common' })}
             />
           </Block>
 

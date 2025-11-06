@@ -7,13 +7,18 @@
     "continue": "Continua",
     "copy": "Copia",
     "delete": "Elimina",
+    "done": "Fatto",
     "edit": "Modifica",
     "more": "Altro",
     "notNow": "Non ora",
+    "openSettings": "Apri impostazioni",
     "regenerate": "Rigenera",
     "retry": "Riprova",
     "save": "Salva",
-    "saveImage": "Salva immagine"
+    "saveImage": "Salva immagine",
+    "saveToAlbum": "Salva nell'album",
+    "share": "Condividi",
+    "shareImage": "Condividi immagine"
   },
   "and": "e",
   "assistant": {
@@ -40,6 +45,7 @@
     "placeholder": "Cerca"
   },
   "status": {
+    "capturing": "Acquisizione schermata in corso...",
     "error": "Errore",
     "info": "Informazione",
     "loading": "Caricamento in corso...",

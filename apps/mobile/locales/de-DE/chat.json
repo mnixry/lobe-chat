@@ -18,6 +18,7 @@
   "defaultAgent": "Benutzerdefinierter Assistent",
   "defaultList": "Standardliste",
   "deleteMessageConfirm": "Möchten Sie diese Nachricht wirklich löschen?",
+  "generateShareImage": "Freigabebild erstellen",
   "history": "Chatverlauf",
   "inbox": {
     "desc": "Aktiviere das Gehirnnetzwerk und entfalte kreative Gedanken. Dein intelligenter Assistent ist hier, um mit dir über alles zu sprechen.",
@@ -39,6 +40,7 @@
     "thoughtWithoutDuration": "Tief nachgedacht"
   },
   "regenerateFailed": "Erneutes Generieren fehlgeschlagen, bitte versuche es später erneut",
+  "selectedMessages": "{{count}} Nachrichten ausgewählt",
   "send": "Senden",
   "session": {
     "createFirst": "Erstelle deine erste Chat-Sitzung",
@@ -76,6 +78,17 @@
     "title": "Konversationseinstellungen"
   },
   "share": "Teilen",
+  "shareDisclaimer": "Diese Antwort wurde von einer KI generiert und dient nur zu Referenzzwecken. Bitte prüfen Sie die Informationen sorgfältig.",
+  "shareImageCaptureFailed": "Screenshot fehlgeschlagen, bitte erneut versuchen",
+  "shareImageFailed": "Teilen fehlgeschlagen, bitte erneut versuchen",
+  "shareImageGenerated": "Freigabebild wurde erstellt",
+  "shareImageGeneratedDesc": "Wählen Sie die gewünschte Aktion aus",
+  "shareImageSaveFailed": "Speichern fehlgeschlagen, bitte erneut versuchen",
+  "shareImageSaveSuccess": "Bild wurde im Album gespeichert",
+  "shareImageTitle": "Chatverlauf teilen",
+  "shareMessages": "{{count}} Nachrichten teilen",
+  "shareNotAvailable": "Teilen wird auf Ihrem Gerät nicht unterstützt",
+  "shareWatermark": "Erstellt mit {{app}}",
   "stop": "Stopp",
   "thinking": "Denke nach...",
   "upload": {

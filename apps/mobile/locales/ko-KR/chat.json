@@ -18,6 +18,7 @@
   "defaultAgent": "사용자 지정 도우미",
   "defaultList": "기본 목록",
   "deleteMessageConfirm": "이 메시지를 삭제하시겠습니까?",
+  "generateShareImage": "공유 이미지 생성",
   "history": "대화 기록",
   "inbox": {
     "desc": "두뇌 클러스터를 활성화하여 사고의 불꽃을 일으키세요. 당신의 지능형 도우미가 여기서 모든 대화를 나눕니다.",
@@ -39,6 +40,7 @@
     "thoughtWithoutDuration": "심층 사고 완료"
   },
   "regenerateFailed": "재생성에 실패했습니다. 잠시 후 다시 시도해 주세요.",
+  "selectedMessages": "{{count}}개의 메시지가 선택되었습니다",
   "send": "전송",
   "session": {
     "createFirst": "첫 번째 채팅 세션을 생성하세요",
@@ -76,6 +78,17 @@
     "title": "대화 설정"
   },
   "share": "공유",
+  "shareDisclaimer": "이 답변은 AI에 의해 생성되었으며, 참고용으로만 제공됩니다. 신중하게 판단해 주세요.",
+  "shareImageCaptureFailed": "스크린샷에 실패했습니다. 다시 시도해 주세요",
+  "shareImageFailed": "공유에 실패했습니다. 다시 시도해 주세요",
+  "shareImageGenerated": "공유 이미지가 생성되었습니다",
+  "shareImageGeneratedDesc": "실행할 작업을 선택하세요",
+  "shareImageSaveFailed": "저장에 실패했습니다. 다시 시도해 주세요",
+  "shareImageSaveSuccess": "이미지가 앨범에 저장되었습니다",
+  "shareImageTitle": "채팅 기록 공유",
+  "shareMessages": "{{count}}개의 메시지 공유",
+  "shareNotAvailable": "이 기기는 공유 기능을 지원하지 않습니다",
+  "shareWatermark": "{{app}}에서 생성됨",
   "stop": "중지",
   "thinking": "생각 중...",
   "upload": {

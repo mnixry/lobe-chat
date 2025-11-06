@@ -7,13 +7,18 @@
     "continue": "متابعة",
     "copy": "نسخ",
     "delete": "حذف",
+    "done": "تم",
     "edit": "تعديل",
     "more": "المزيد",
     "notNow": "ليس الآن",
+    "openSettings": "افتح الإعدادات",
     "regenerate": "إعادة التوليد",
     "retry": "إعادة المحاولة",
     "save": "حفظ",
-    "saveImage": "حفظ الصورة"
+    "saveImage": "حفظ الصورة",
+    "saveToAlbum": "احفظ في الألبوم",
+    "share": "مشاركة",
+    "shareImage": "مشاركة الصورة"
   },
   "and": "و",
   "assistant": {
@@ -40,6 +45,7 @@
     "placeholder": "بحث"
   },
   "status": {
+    "capturing": "جارٍ التقاط الصورة...",
     "error": "خطأ",
     "info": "معلومات",
     "loading": "جارٍ التحميل...",

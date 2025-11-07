@@ -76,25 +76,32 @@ await emailService.sendMail({
 Configure SMTP settings using environment variables:
 
 ```bash
-# SMTP Server Configuration
+# Option 1: Custom SMTP Server
 SMTP_HOST=smtp.example.com
 SMTP_PORT=587
 SMTP_SECURE=false # true for port 465, false for other ports
 SMTP_USER=your-username
 SMTP_PASS=your-password
+
+# Option 2: Well-Known Service (Gmail, SendGrid, etc.)
+# This will override SMTP_HOST, SMTP_PORT, and SMTP_SECURE
+SMTP_SERVICE=Gmail
+SMTP_USER=your-gmail@gmail.com
+SMTP_PASS=your-app-password
 ```
 
-### Using Well-Known Services
+**Note**: When using `SMTP_SERVICE`, you don't need to set `SMTP_HOST`, `SMTP_PORT`, or `SMTP_SECURE` as they will be automatically configured based on the service name.
 
-You can also use well-known email services (Gmail, SendGrid, etc.):
+### Supported Well-Known Services
 
-```typescript
-import { EmailImplType, EmailService } from '@/server/services/email';
-import { NodemailerImpl } from '@/server/services/email/impls/nodemailer';
+Common service names include:
 
-const emailService = new EmailService(EmailImplType.Nodemailer);
-// Configure in constructor with service name
-```
+- `Gmail`
+- `SendGrid`
+- `Yahoo`
+- `Outlook365`
+- `Mailgun`
+- See [full list](https://github.com/nodemailer/nodemailer/blob/master/lib/well-known/services.json)
 
 ### Testing with Ethereal
 

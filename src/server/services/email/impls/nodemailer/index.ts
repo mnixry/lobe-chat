@@ -3,6 +3,8 @@ import debug from 'debug';
 import nodemailer from 'nodemailer';
 import type { Transporter } from 'nodemailer';
 
+import { emailEnv } from '@/envs/email';
+
 import { EmailPayload, EmailResponse, EmailServiceImpl } from '../type';
 import { NodemailerConfig } from './type';
 
@@ -19,13 +21,17 @@ export class NodemailerImpl implements EmailServiceImpl {
 
     // Use environment variables if config is not provided
     const transportConfig: NodemailerConfig = config || {
-      auth: {
-        pass: process.env.SMTP_PASS || '',
-        user: process.env.SMTP_USER || '',
-      },
-      host: process.env.SMTP_HOST || 'localhost',
-      port: Number(process.env.SMTP_PORT) || 587,
-      secure: process.env.SMTP_SECURE === 'true',
+      auth:
+        emailEnv.SMTP_USER && emailEnv.SMTP_PASS
+          ? {
+              pass: emailEnv.SMTP_PASS,
+              user: emailEnv.SMTP_USER,
+            }
+          : undefined,
+      host: emailEnv.SMTP_HOST || 'localhost',
+      port: emailEnv.SMTP_PORT || 587,
+      secure: emailEnv.SMTP_SECURE || false,
+      service: emailEnv.SMTP_SERVICE,
     };
 
     // Validate configuration

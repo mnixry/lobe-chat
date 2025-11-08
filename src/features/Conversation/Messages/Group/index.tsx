@@ -2,6 +2,7 @@
 
 import { UIChatMessage } from '@lobechat/types';
 import { useResponsive } from 'antd-style';
+import isEqual from 'fast-deep-equal';
 import { memo, useCallback } from 'react';
 import { Flexbox } from 'react-layout-kit';
 
@@ -141,6 +142,6 @@ const GroupMessage = memo<GroupMessageProps>((props) => {
       {mobile && <BorderSpacing borderSpacing={MOBILE_AVATAR_SIZE} />}
     </Flexbox>
   );
-});
+}, isEqual);
 
 export default GroupMessage;
